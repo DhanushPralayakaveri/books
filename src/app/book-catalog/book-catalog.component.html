@@ -1,0 +1,7 @@
+<div class="book-grid">
+    <div *ngFor="let book of books" class="book-card" routerLink="/details/:{book.id}" (click)="selectBook(book)">
+      <img [src]="book.imageUrl" alt="{{book.name}}">
+      <h3>{{book.name}}</h3>
+      <p>{{book.author}}</p>
+    </div>
+  </div>

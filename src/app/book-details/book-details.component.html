@@ -1,0 +1,9 @@
+<div *ngIf="book" class="book-details">
+  <img [src]="book.imageUrl" alt="{{book.name}}">
+  <h2>{{book.name}}</h2>
+  <p>Author: {{book.author}}</p>
+  <hr>
+  <p class="book-description">{{book.description}}</p>
+  <p>{{book.price}}</p>
+  <a class="button" [href]="book.buyUrl" target="__blank">Buy!</a>
+</div>
